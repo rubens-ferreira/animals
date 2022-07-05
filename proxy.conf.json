@@ -1,0 +1,11 @@
+{
+  "/api": {
+    "target": "https://elephant-api.herokuapp.com",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}

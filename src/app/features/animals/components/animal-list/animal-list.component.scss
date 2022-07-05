@@ -1,0 +1,24 @@
+.animal-list-card {
+  max-width: 600px;
+}
+
+.animal-list-actions {
+  display: table-cell;
+  width: 490px;
+}
+
+.animal-list-actions .animal-list-action {
+  margin: 8px 8px 8px 0;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-row:nth-child(even) {
+  background-color: grey;
+}
+
+.mat-row:nth-child(odd) {
+  background-color: white;
+}

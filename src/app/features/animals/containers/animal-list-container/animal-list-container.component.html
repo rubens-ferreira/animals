@@ -1,0 +1,8 @@
+<app-spinner *ngIf="loading$ | async"></app-spinner>
+<app-message [message]="(message$ | async) ?? ''"></app-message>
+<app-animal-list
+  [animals]="(animals$ | async) ?? []"
+  [automaticLoaderEnabled]="(automaticLoaderEnabled$ | async) ?? false"
+  (loadAnimals)="loadAnimals()"
+  (toggleAutomaticLoader)="toggleAutomaticLoader()"
+></app-animal-list>
