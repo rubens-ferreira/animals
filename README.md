@@ -1,5 +1,17 @@
 # Animals App
-
+```mermaid
+  graph TD;
+    A(Browser) -->|Request| B(Proxy);
+    B --> |Response| A;
+    B --> |Request| C(Internet);
+    C --> |Response| B;
+    B --> |http headers, body, etc. | D(Message Classifier);
+    D --> |json| E(Json Splitter);
+    D --> |html, text| H(Recycle);
+    E --> |email, text, number, etc| F(Token Selector);
+    F --> |sender, subject, message | G(SQLite Saver);
+    F --> I(Recycle);
+```
 Sample application to display a list of animals.
 
 ## Patterns
